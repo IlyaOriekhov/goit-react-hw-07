@@ -20,6 +20,7 @@ const SearchBox = () => {
         type="text"
         value={filterValue}
         onChange={selectNameFilter}
+        placeholder="Enter a name"
       />
     </div>
   );

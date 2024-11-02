@@ -45,7 +45,13 @@ const ContactForm = () => {
         <label className={css.name} htmlFor={nameFieldId}>
           Name
         </label>
-        <Field className={css.field} type="text" name="name" id={nameFieldId} />
+        <Field
+          className={css.field}
+          type="text"
+          name="name"
+          id={nameFieldId}
+          placeholder="Enter a name"
+        />
         <ErrorMessage className={css.error} name="name" component="span" />
 
         <label className={css.name} htmlFor={numberFieldId}>
@@ -56,6 +62,7 @@ const ContactForm = () => {
           type="text"
           name="number"
           id={numberFieldId}
+          placeholder="Enter the nubmer"
         />
         <ErrorMessage className={css.error} name="number" component="span" />
         <button className={css.btn} type="submit">
